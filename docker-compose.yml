@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  jenkins:
+    image: jenkins:jcasc
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+    container_name: jenkins
+    environment:
+      JENKINS_ADMIN_ID: admin
+      JENKINS_ADMIN_PASSWORD: password
+    ports:
+      - 8082:8080
+      - 50000:50000
