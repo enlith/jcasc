@@ -10,13 +10,13 @@ jenkins:
       permissions:
         - "Overall/Administer:admin"
         - "Overall/Read:authenticated"
+  remotingSecurity:
+    enabled: true    
 security:
   queueItemAuthenticator:
     authenticators:
     - global:
-        strategy: triggeringUsersAuthorizationStrategy
-  remotingSecurity:
-    enabled: true        
+        strategy: "triggeringUsersAuthorizationStrategy"
 unclassified:
   location:
     url: http://192.168.1.117:8082/
