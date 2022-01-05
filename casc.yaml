@@ -10,6 +10,8 @@ jenkins:
       permissions:
         - "Overall/Administer:admin"
         - "Overall/Read:authenticated"
+  remotingSecurity:
+    enabled: true        
 unclassified:
   location:
     url: http://192.168.1.117:8082/
